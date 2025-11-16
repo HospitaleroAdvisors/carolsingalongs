@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://carolsingalongs.org">
+    <meta property="og:title" content="Carol Sing-Alongs Windsor 2025">
+    <meta property="og:description" content="Participatory carol singing events in Windsor this December">
+    <meta property="og:image" content="https://carolsingalongs.org/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://carolsingalongs.org">
+    <meta property="twitter:title" content="Carol Sing-Alongs Windsor 2025">
+    <meta property="twitter:description" content="Participatory carol singing events in Windsor this December">
+    <meta property="twitter:image" content="https://carolsingalongs.org/og-image.jpg">
+    
     <title>Carol Sing-Alongs Windsor 2025</title>
     <style>
         * {
@@ -27,7 +42,7 @@
             padding: 30px 20px;
         }
         
-        /* Header Section */
+        /* Header Section - Warm & Inviting */
         header {
             background: #1a5632;
             color: #fffef8;
@@ -72,18 +87,14 @@
         }
         
         .tagline {
-            background: rgba(255, 255, 255, 0.12);
-            padding: 22px 25px;
-            border-radius: 15px;
-            border: 2px dashed rgba(255, 215, 0, 0.5);
-            font-size: 1.15em;
-            line-height: 1.8;
             margin-top: 20px;
+            font-size: 1em;
+            line-height: 1.8;
         }
         
         .tagline-quote {
             font-style: italic;
-            font-size: 1.1em;
+            font-size: 1em;
             margin-bottom: 10px;
             color: #fff9e8;
         }
@@ -95,8 +106,23 @@
             font-weight: 300;
         }
         
-        /* Quote Dividers - Green background */
-        .quote-divider {
+        /* Section Headers - Organic Feel */
+        .section-header {
+            background: #c73642;
+            color: #fffef8;
+            padding: 18px 30px;
+            margin: 45px 0 30px 0;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 1.7em;
+            box-shadow: 0 3px 12px rgba(199, 54, 66, 0.25);
+            border: 3px solid #a82d36;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+        
+        /* Participation Note & Buddy Quote Dividers - Green Style */
+        .participation-note, .buddy-quote-divider {
             background: #1a5632;
             color: #fffef8;
             padding: 25px 30px;
@@ -104,22 +130,24 @@
             border-radius: 15px;
             border: 3px solid #2d7045;
             box-shadow: 0 4px 16px rgba(26, 86, 50, 0.2);
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 1.05em;
+            font-family: 'Georgia', serif;
+            font-size: 1em;
             line-height: 1.7;
             font-style: italic;
         }
         
-        .quote-divider .quote-text {
+        .buddy-quote-divider .tagline-quote {
+            display: inline;
             color: #fff9e8;
         }
         
-        .quote-divider .quote-attribution {
+        .buddy-quote-divider .tagline-attribution {
+            display: inline;
             color: #ffd966;
             font-weight: 300;
         }
         
-        /* Event Cards */
+        /* Event Cards - Warm & Personal */
         .event-card {
             background: #ffffff;
             border: 3px solid #2d7045;
@@ -146,6 +174,37 @@
             border-color: #1a5632;
         }
         
+        /* Riverside United Event - Special Layout with Flyer */
+        .riverside-event {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        .event-content {
+            flex: 1;
+        }
+        
+        .event-flyer {
+            flex-shrink: 0;
+        }
+        
+        .event-flyer a {
+            display: block;
+        }
+        
+        .event-flyer img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .event-flyer img:hover {
+            transform: scale(1.02);
+        }
+        
         .event-title {
             color: #c73642;
             font-size: 1.55em;
@@ -164,10 +223,46 @@
         .event-location {
             color: #5a6b4d;
             font-size: 1em;
-            margin-bottom: 0;
+            margin-bottom: 16px;
         }
         
-        /* About Section */
+        .event-description {
+            color: #3d4531;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        .placeholder-note {
+            color: #7a8266;
+            font-style: italic;
+            font-size: 0.92em;
+        }
+        
+        .social-media-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 18px;
+            background: #2d7045;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+        
+        .social-media-link:hover {
+            background: #1a5632;
+            transform: scale(1.05);
+        }
+        
+        .social-media-placeholder {
+            color: #999;
+            font-style: italic;
+            font-size: 0.88em;
+            margin-top: 10px;
+        }
+        
+        /* About Section - Personal Touch */
         .about-section {
             background: #ead9b8;
             border: 4px solid #e8d598;
@@ -203,13 +298,12 @@
         }
         
         .about-attribution {
-            text-align: right;
             font-style: italic;
             color: #2d7045;
             font-size: 1.05em;
         }
         
-        /* Footer */
+        /* Footer/Contact Section - Friendly Warmth */
         footer {
             background: #1a5632;
             color: #fffef8;
@@ -267,7 +361,11 @@
             
             .tagline {
                 font-size: 1em;
-                padding: 18px 20px;
+            }
+            
+            .section-header {
+                font-size: 1.4em;
+                padding: 15px 25px;
             }
             
             .event-card {
@@ -285,6 +383,19 @@
             .about-section {
                 padding: 28px 25px;
             }
+            
+            /* Mobile: Stack flyer below content */
+            .riverside-event {
+                flex-direction: column;
+            }
+            
+            .event-flyer {
+                width: 100%;
+            }
+            
+            .event-flyer img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -296,15 +407,25 @@
             <p class="subtitle">Participatory sing-along events to belt out Christmas carols together</p>
             <div class="tagline">
                 <div class="tagline-quote">"The best way to spread Christmas cheer is singing loud for all to hear."</div>
-                <div class="tagline-attribution">~ Buddy Hobbs (Elf the movie 2003)</div>
+                <div class="tagline-attribution">~ Buddy Hobbs (Elf the movie)</div>
             </div>
         </header>
 
+        <!-- Events -->
+
         <!-- Event 1: Chili & Song @ Riverside United Church -->
-        <div class="event-card">
-            <div class="event-title">Chili & Song @ Riverside United Church</div>
-            <div class="event-date-time">📅 Sun, Dec 7, 2025 • 5:30 PM - 7:30 PM</div>
-            <div class="event-location">📍 881 Glidden Ave, Windsor, ON</div>
+        <div class="event-card riverside-event">
+            <div class="event-content">
+                <div class="event-title">Chili & Song @ Riverside United Church</div>
+                <div class="event-date-time">📅 Sun, Dec 7, 2025 • 5:30 PM - 7:30 PM</div>
+                <div class="event-location">📍 881 Glidden Ave, Windsor</div>
+                <a href="https://www.facebook.com/share/p/1WCZzBvBKo/" class="social-media-link">Event details on Facebook</a>
+            </div>
+            <div class="event-flyer">
+                <a href="riverside-flyer.jpg" target="_blank">
+                    <img src="riverside-flyer.jpg" alt="Chili & Song event flyer">
+                </a>
+            </div>
         </div>
 
         <!-- Event 2: Grace Cafe @ Salvation Army - South Windsor Citadel -->
@@ -312,10 +433,12 @@
             <div class="event-title">Grace Cafe @ Salvation Army - South Windsor Citadel</div>
             <div class="event-date-time">📅 Fri, Dec 12, 2025 • 9:00 AM - 11:00 AM</div>
             <div class="event-location">📍 1201 Grand Marais Road West, Windsor, ON</div>
+            <p class="event-description"><span class="placeholder-note">Placeholder description (waiting for official intro):</span> Join us at Grace Cafe for a special morning of Christmas carol singing.</p>
+            <div class="social-media-placeholder">[Social media event page link - coming soon]</div>
         </div>
 
-        <!-- Participation Note Divider -->
-        <div class="quote-divider">
+        <!-- Participation Note -->
+        <div class="participation-note">
             <em>Carol sing-alongs are participatory events—not concerts. At least 50% of the program is dedicated to everyone singing together vs. watching performers.</em>
         </div>
 
@@ -324,12 +447,14 @@
             <div class="event-title">Vineyard Christian Fellowship</div>
             <div class="event-date-time">📅 Wed, Dec 17, 2025 • Time TBA</div>
             <div class="event-location">📍 1650 Howard Ave., Windsor, ON</div>
+            <p class="event-description"><span class="placeholder-note">Placeholder description (waiting for official intro):</span> Join Vineyard Christian Fellowship for an evening of participatory carol singing.</p>
+            <div class="social-media-placeholder">[Social media event page link - coming soon]</div>
         </div>
 
-        <!-- Jovie/Buddy Quote Divider -->
-        <div class="quote-divider">
-            <span class="quote-text">Jovie: Thanks, but I don't sing<br>
-            Buddy: Oh, it's easy, it's just like talking—except louder and longer and you move your voice up and down. <span class="quote-attribution">~ (Elf the movie)</span></span>
+        <!-- Jovie/Buddy Dialogue -->
+        <div class="buddy-quote-divider">
+            Jovie: Thanks, but I don't sing<br>
+            Buddy: Oh, it's easy, it's just like talking—except louder and longer and you move your voice up and down. <span class="tagline-attribution">~ (Elf the movie)</span>
         </div>
 
         <!-- Event 4: Grace Bible Church -->
@@ -337,6 +462,8 @@
             <div class="event-title">Grace Bible Church</div>
             <div class="event-date-time">📅 Date TBA (December 2025)</div>
             <div class="event-location">📍 Holiday Inn, 1855 Huron Church Road, Windsor, ON</div>
+            <p class="event-description"><span class="placeholder-note">Placeholder description (waiting for official intro):</span> Grace Bible Church is planning a carol sing-along event this December!</p>
+            <div class="social-media-placeholder">[Social media event page link - coming soon]</div>
         </div>
 
         <!-- Event 5: Glenwood United -->
@@ -344,6 +471,8 @@
             <div class="event-title">Glenwood United</div>
             <div class="event-date-time">📅 Sun, Dec 21, 2025 • 4:00 PM - 5:00 PM</div>
             <div class="event-location">📍 1825 Grand Marais Road West, Windsor, ON</div>
+            <p class="event-description"><span class="placeholder-note">Placeholder description (waiting for official intro):</span> Join us for an afternoon of community carol singing led by our music director.</p>
+            <div class="social-media-placeholder">[Social media event page link - coming soon]</div>
         </div>
 
         <!-- About Section -->
@@ -352,7 +481,7 @@
             <p>After years of carol sing-along filled Decembers in Edmonton, I wondered if similar experiences were available in Windsor too. This guide is proof the answer is YES! I'm looking forward to singing along and co-creating some Christmas cheer with you. <span class="about-attribution">~ Steve Grubich</span></p>
         </div>
 
-        <!-- Footer -->
+        <!-- Footer/Contact -->
         <footer>
             <h3>Comments • Questions • Want your Carol Sing-Along listed here?</h3>
             <p>Email: <a href="mailto:carolsingalong@gmail.com">carolsingalong@gmail.com</a></p>
