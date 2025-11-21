@@ -174,7 +174,7 @@
             border-color: #1a5632;
         }
         
-        /* Riverside United Event - Special Layout with Flyer */
+        /* Riverside United Event - Original Flexbox Layout with Portrait Flyer */
         .riverside-event {
             display: flex;
             gap: 20px;
@@ -205,6 +205,52 @@
             transform: scale(1.02);
         }
         
+        /* Salvation Army - Table Structure for Landscape Flyer */
+        .event-title-outside {
+            color: #c73642;
+            font-size: 1.55em;
+            margin-bottom: 12px;
+            font-weight: normal;
+            width: 100%;
+        }
+        
+        .event-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .event-table td {
+            padding: 0;
+            vertical-align: top;
+        }
+        
+        .text-column {
+            padding-right: 20px;
+            vertical-align: top;
+        }
+        
+        .flyer-column {
+            text-align: right;
+            vertical-align: bottom;
+        }
+        
+        .flyer-column a {
+            display: inline-block;
+        }
+        
+        .flyer-column img {
+            max-height: 225px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .flyer-column img:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Standard Event Elements */
         .event-title {
             color: #c73642;
             font-size: 1.55em;
@@ -384,7 +430,7 @@
                 padding: 28px 25px;
             }
             
-            /* Mobile: Stack flyer below content */
+            /* Mobile: Stack flyer below content for both layouts */
             .riverside-event {
                 flex-direction: column;
             }
@@ -395,6 +441,29 @@
             
             .event-flyer img {
                 max-width: 100%;
+            }
+            
+            /* Mobile: Stack table cells */
+            .event-table,
+            .event-table tbody,
+            .event-table tr,
+            .event-table td {
+                display: block;
+                width: 100%;
+            }
+            
+            .text-column {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .flyer-column {
+                text-align: center;
+            }
+            
+            .flyer-column img {
+                max-width: 100%;
+                max-height: none;
             }
         }
     </style>
@@ -428,11 +497,22 @@
             </div>
         </div>
 
-        <!-- Event 2: Grace Cafe @ Salvation Army - South Windsor Citadel -->
+        <!-- Event 2: Carol Sing @ the Grace Cafe, Salvation Army -->
         <div class="event-card">
-            <div class="event-title">Grace Cafe @ Salvation Army - South Windsor Citadel</div>
-            <div class="event-date-time">📅 Fri, Dec 12, 2025 • 9:00 AM - 11:00 AM</div>
-            <div class="event-location">📍 1201 Grand Marais Road West, Windsor, ON</div>
+            <div class="event-title-outside">Carol Sing @ the Grace Cafe, Salvation Army - South Windsor Citadel</div>
+            <table class="event-table">
+                <tr>
+                    <td class="text-column">
+                        <div class="event-date-time">📅 Fri, Dec 12, 2025 • 10:00 AM</div>
+                        <div class="event-location">📍 1201 Grand Marais Road West, Windsor, ON</div>
+                    </td>
+                    <td class="flyer-column">
+                        <a href="Graceful_Gatherings_Carol_Sing.jpg" target="_blank">
+                            <img src="Graceful_Gatherings_Carol_Sing.jpg" alt="Grace Cafe Carol Sing event flyer">
+                        </a>
+                    </td>
+                </tr>
+            </table>
         </div>
 
         <!-- Participation Note -->
@@ -440,11 +520,13 @@
             <em>Carol sing-alongs are participatory events—not concerts. At least 50% of the program is dedicated to everyone singing together vs. watching performers.</em>
         </div>
 
-        <!-- Event 3: Vineyard Christian Fellowship -->
+        <!-- Event 3: Candlelight Christmas @ Vineyard Christian Fellowship -->
         <div class="event-card">
-            <div class="event-title">Vineyard Christian Fellowship</div>
-            <div class="event-date-time">📅 Wed, Dec 17, 2025 • Time TBA</div>
+            <div class="event-title">Candlelight Christmas @ Vineyard Christian Fellowship</div>
+            <div class="event-date-time">📅 Wed, Dec 17, 2025 • 7:00 PM</div>
             <div class="event-location">📍 1650 Howard Ave., Windsor, ON</div>
+            <p class="event-description">An evening of readings and Christmas Carols. Everyone welcome,</p>
+            <a href="https://www.vineyardwindsor.com/upcoming-events" class="social-media-link">Event details on website</a>
         </div>
 
         <!-- Jovie/Buddy Dialogue -->
@@ -460,11 +542,12 @@
             <div class="event-location">📍 Holiday Inn, 1855 Huron Church Road, Windsor, ON</div>
         </div>
 
-        <!-- Event 5: Glenwood United -->
+        <!-- Event 5: Community Carol Sing @ Glenwood United -->
         <div class="event-card">
-            <div class="event-title">Glenwood United</div>
+            <div class="event-title">Community Carol Sing @ Glenwood United</div>
             <div class="event-date-time">📅 Sun, Dec 21, 2025 • 4:00 PM - 5:00 PM</div>
             <div class="event-location">📍 1825 Grand Marais Road West, Windsor, ON</div>
+            <p class="event-description">All ages are welcome to join us in singing our favourite Christmas carols</p>
         </div>
 
         <!-- About Section -->
