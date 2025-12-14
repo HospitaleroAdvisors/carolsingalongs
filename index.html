@@ -121,6 +121,99 @@
             letter-spacing: 1px;
         }
         
+        /* Accordion FAQ Styling */
+        .faq-container {
+            margin: 30px 0;
+        }
+        
+        .accordion-item {
+            margin-bottom: 15px;
+        }
+        
+        .accordion-header {
+            background: #1a5632;
+            color: #fffef8;
+            padding: 18px 25px;
+            border-radius: 12px;
+            border: 3px solid #2d7045;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(26, 86, 50, 0.15);
+            font-size: 1.1em;
+            font-weight: normal;
+        }
+        
+        .accordion-header:hover {
+            background: #2d7045;
+            box-shadow: 0 4px 14px rgba(26, 86, 50, 0.25);
+        }
+        
+        .accordion-icon {
+            font-size: 1.3em;
+            transition: transform 0.3s ease;
+            color: #ffd966;
+        }
+        
+        .accordion-item.active .accordion-icon {
+            transform: rotate(45deg);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background: #ffffff;
+            border: 3px solid #2d7045;
+            border-top: none;
+            border-radius: 0 0 12px 12px;
+            margin-top: -3px;
+        }
+        
+        .accordion-item.active .accordion-content {
+            max-height: 800px;
+        }
+        
+        .accordion-inner {
+            padding: 20px 25px;
+            color: #2d3319;
+            line-height: 1.7;
+        }
+        
+        .accordion-inner ul {
+            margin: 15px 0 0 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .accordion-inner li {
+            padding: 8px 0;
+            padding-left: 0;
+        }
+        
+        /* Radio Interview Embed Section */
+        .radio-embed-section {
+            margin: 35px 0;
+        }
+        
+        .radio-embed-label {
+            color: #1a5632;
+            font-size: 1.15em;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .radio-embed-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+        
         /* Participation Note & Buddy Quote Dividers - Green Style */
         .participation-note, .buddy-quote-divider {
             background: #1a5632;
@@ -216,12 +309,6 @@
         
         .event-table {
             width: 100%;
-            border-collapse: collapse;
-        }
-        
-        .event-table td {
-            padding: 0;
-            vertical-align: top;
         }
         
         .text-column {
@@ -230,18 +317,13 @@
         }
         
         .flyer-column {
+            vertical-align: top;
             text-align: right;
-            vertical-align: bottom;
-        }
-        
-        .flyer-column a {
-            display: inline-block;
         }
         
         .flyer-column img {
-            max-width: 100%;
-            max-height: 200px;
-            width: auto;
+            max-width: 400px;
+            max-height: 300px;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
@@ -345,10 +427,8 @@
         }
         
         .about-attribution {
-            text-align: right;
             font-style: italic;
             color: #2d7045;
-            margin-top: 15px;
             font-size: 1.05em;
         }
         
@@ -417,6 +497,15 @@
                 padding: 15px 25px;
             }
             
+            .accordion-header {
+                font-size: 1em;
+                padding: 15px 20px;
+            }
+            
+            .accordion-inner {
+                padding: 18px 20px;
+            }
+            
             .event-card {
                 padding: 22px 20px;
             }
@@ -483,6 +572,33 @@
             </div>
         </header>
 
+        <!-- FAQ Section: Q1 + Q2 -->
+        <div class="faq-container">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>What is a carol sing-along?</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        Most of them follow a simple, welcoming format - you gather, sing carols together for 45 minutes to an hour, then coffee and cookies and conversation. Some events have a special twist - like the Lessons and Carols service where singing carols together is woven in between Bible readings telling the Christmas story.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>What do you get out of a sing-along?</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        You'll experience three big things. First - they're FUN! There's something joyful about being in a room full of people belting out 'Jingle Bells' and 'Deck the Halls' together. Then there's the warm hospitality of the host communities and being IN the music rather than just watching a performance.
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Events -->
 
         <!-- Event 1: Chili & Song @ Riverside United Church -->
@@ -497,6 +613,14 @@
                 <a href="riverside-flyer.jpg" target="_blank">
                     <img src="riverside-flyer.jpg" alt="Chili & Song event flyer">
                 </a>
+            </div>
+        </div>
+
+        <!-- Radio Interview Embed -->
+        <div class="radio-embed-section">
+            <div class="radio-embed-label">🎙️ Listen: AM800 Interview</div>
+            <div class="radio-embed-container">
+                <iframe allow="autoplay" width="100%" height="300" src="https://www.iheart.com/podcast/962-mornings-with-mike-and-meg-76578045/episode/christmas-carol-sing-alongs-311842367/?embed=true" frameborder="0"></iframe>
             </div>
         </div>
 
@@ -521,6 +645,27 @@
         <!-- Participation Note -->
         <div class="participation-note">
             <em>Carol sing-alongs are participatory events—not concerts. At least 50% of the program is dedicated to everyone singing together vs. watching performers.</em>
+        </div>
+
+        <!-- FAQ Section: Q5 (First Instance - Before Emmanuel) -->
+        <div class="faq-container">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Lessons & Carols Service: What is it?</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        Lessons and Carols originated in Cornwall, England in 1880 and became world-famous through King's College Cambridge.
+                        <ul>
+                            <li>• 9 Bible readings that tell the Christmas story</li>
+                            <li>• In between the readings: a mix of choirs performing & everyone singing carols together</li>
+                            <li>• @ Lessons & Carols you're part of the Christmas story, not just watching it unfold</li>
+                            <li>• This event was renewed after the collective trauma of World War I to help people reconnect & rebuild community</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Event 3: Christmas Lessons & Carols @ Emmanuel United Church -->
@@ -559,6 +704,27 @@
             <div class="event-title">Grace Bible Church</div>
             <div class="event-date-time">📅 Sat, Dec 20, 2025 • 6:30 PM - 8:30 PM</div>
             <div class="event-location">📍 Holiday Inn, 1855 Huron Church Road, Windsor, ON</div>
+        </div>
+
+        <!-- FAQ Section: Q5 (Second Instance - Before Church of Ascension) -->
+        <div class="faq-container">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Lessons & Carols Service: What is it?</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        Lessons and Carols originated in Cornwall, England in 1880 and became world-famous through King's College Cambridge.
+                        <ul>
+                            <li>• 9 Bible readings that tell the Christmas story</li>
+                            <li>• In between the readings: a mix of choirs performing & everyone singing carols together</li>
+                            <li>• @ Lessons & Carols you're part of the Christmas story, not just watching it unfold</li>
+                            <li>• This event was renewed after the collective trauma of World War I to help people reconnect & rebuild community</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Event 6: Nine Lessons and Carols @ Church of the Ascension -->
@@ -607,5 +773,22 @@
             <p>Email: <a href="mailto:carolsingalong@gmail.com">carolsingalong@gmail.com</a></p>
         </footer>
     </div>
+
+    <script>
+        function toggleAccordion(element) {
+            const item = element.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Close all accordions
+            document.querySelectorAll('.accordion-item').forEach(acc => {
+                acc.classList.remove('active');
+            });
+            
+            // Open clicked accordion if it wasn't already open
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>
