@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://carolsingalongs.org/2025.html">
+    <meta property="og:title" content="Carol Sing-Alongs Windsor 2025">
+    <meta property="og:description" content="Participatory carol singing events in Windsor this December">
+    <meta property="og:image" content="https://carolsingalongs.org/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://carolsingalongs.org/2025.html">
+    <meta property="twitter:title" content="Carol Sing-Alongs Windsor 2025">
+    <meta property="twitter:description" content="Participatory carol singing events in Windsor this December">
+    <meta property="twitter:image" content="https://carolsingalongs.org/og-image.jpg">
+    
+    <title>Carol Sing-Alongs Windsor 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: #2d3319;
+            background: #faf8f3;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(220, 240, 220, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 245, 230, 0.4) 0%, transparent 50%);
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        
+        /* Header Section - Warm & Inviting */
+        header {
+            background: #1a5632;
+            color: #fffef8;
+            padding: 35px 35px 25px 35px;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 24px rgba(26, 86, 50, 0.2);
+            border: 4px solid #2d7045;
+            position: relative;
+        }
+        
+        header::before {
+            content: "🎄";
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            font-size: 2em;
+        }
+        
+        header::after {
+            content: "🎄";
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 2em;
+        }
+        
+        h1 {
+            font-size: 2.3em;
+            margin-bottom: 18px;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+        }
+        
+        .subtitle {
+            font-size: 1.25em;
+            margin-bottom: 0;
+            font-style: italic;
+            color: #e8f4ea;
+            font-weight: 300;
+        }
+        
+        .tagline {
+            margin-top: 20px;
+            font-size: 1em;
+            line-height: 1.8;
+        }
+        
+        .tagline-quote {
+            font-style: italic;
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #fff9e8;
+        }
+        
+        .tagline-attribution {
+            font-size: 0.9em;
+            text-align: right;
+            color: #ffd966;
+            font-weight: 300;
+        }
+        
+        .archive-banner {
+            display: block;
+            background: #c73642;
+            color: #fffef8;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 50px;
+            border: 3px solid #a82d36;
+            margin-bottom: 20px;
+            font-size: 1.05em;
+            box-shadow: 0 3px 12px rgba(199, 54, 66, 0.25);
+        }
+
+        .archive-banner:hover { background: #a82d36; }
+
+        /* Section Headers - Organic Feel */
+        .section-header {
+            background: #c73642;
+            color: #fffef8;
+            padding: 18px 30px;
+            margin: 45px 0 30px 0;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 1.7em;
+            box-shadow: 0 3px 12px rgba(199, 54, 66, 0.25);
+            border: 3px solid #a82d36;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+        
+        /* Accordion FAQ Styling */
+        .faq-container {
+            margin: 30px 0;
+        }
+        
+        .accordion-item {
+            margin-bottom: 15px;
+        }
+        
+        .accordion-header {
+            background: #1a5632;
+            color: #fffef8;
+            padding: 18px 25px;
+            border-radius: 12px;
+            border: 3px solid #2d7045;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(26, 86, 50, 0.15);
+            font-size: 1.1em;
+            font-weight: normal;
+        }
+        
+        .accordion-header:hover {
+            background: #2d7045;
+            box-shadow: 0 4px 14px rgba(26, 86, 50, 0.25);
+        }
+        
+        .accordion-icon {
+            font-size: 1.3em;
+            transition: transform 0.3s ease;
+            color: #ffd966;
+        }
+        
+        .accordion-item.active .accordion-icon {
+            transform: rotate(45deg);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background: #ffffff;
+            border: 3px solid #2d7045;
+            border-top: none;
+            border-radius: 0 0 12px 12px;
+            margin-top: -3px;
+        }
+        
+        .accordion-header {
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        .accordion-header:focus-visible {
+            outline: 3px solid #ffd966;
+            outline-offset: 2px;
+        }
+        
+        .accordion-inner {
+            padding: 20px 25px;
+            color: #2d3319;
+            line-height: 1.7;
+        }
+        
+        .accordion-inner ul {
+            margin: 15px 0 0 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .accordion-inner li {
+            padding: 8px 0;
+            padding-left: 0;
+        }
+        
+        /* Radio Interview Embed Section */
+        .radio-embed-section {
+            margin: 35px 0;
+        }
+        
+        .radio-embed-label {
+            color: #1a5632;
+            font-size: 1.15em;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .radio-embed-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+        
+        /* Participation Note & Buddy Quote Dividers - Green Style */
+        .participation-note, .buddy-quote-divider {
+            background: #1a5632;
+            color: #fffef8;
+            padding: 25px 30px;
+            margin: 35px 0;
+            border-radius: 15px;
+            border: 3px solid #2d7045;
+            box-shadow: 0 4px 16px rgba(26, 86, 50, 0.2);
+            font-family: 'Georgia', serif;
+            font-size: 1em;
+            line-height: 1.7;
+            font-style: italic;
+        }
+        
+        .buddy-quote-divider .tagline-quote {
+            display: inline;
+            color: #fff9e8;
+        }
+        
+        .buddy-quote-divider .tagline-attribution {
+            display: inline;
+            color: #ffd966;
+            font-weight: 300;
+        }
+        
+        /* Event Cards - Warm & Personal */
+        .event-card {
+            background: #ffffff;
+            border: 3px solid #2d7045;
+            border-radius: 18px;
+            padding: 24px 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .event-card::before {
+            content: "🔔";
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5em;
+            opacity: 0.3;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(45, 112, 69, 0.15);
+            border-color: #1a5632;
+        }
+        
+        /* Riverside United Event - Original Flexbox Layout with Portrait Flyer */
+        .riverside-event {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        .event-content {
+            flex: 1;
+        }
+        
+        .event-flyer {
+            flex-shrink: 0;
+        }
+        
+        .event-flyer a {
+            display: block;
+        }
+        
+        .event-flyer img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .event-flyer img:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Salvation Army - Table Structure for Landscape Flyer */
+        .event-title-outside {
+            color: #c73642;
+            font-size: 1.55em;
+            margin-bottom: 12px;
+            font-weight: normal;
+            width: 100%;
+        }
+        
+        .event-table {
+            width: 100%;
+        }
+        
+        .text-column {
+            padding-right: 20px;
+            vertical-align: top;
+        }
+        
+        .flyer-column {
+            vertical-align: top;
+            text-align: right;
+        }
+        
+        .flyer-column img {
+            max-width: 400px;
+            max-height: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .flyer-column img:hover {
+            transform: scale(1.02);
+        }
+        
+        .event-title {
+            color: #c73642;
+            font-size: 1.55em;
+            margin-bottom: 12px;
+            font-weight: normal;
+            letter-spacing: 0.3px;
+        }
+        
+        .event-date-time {
+            color: #1a5632;
+            font-size: 1.15em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .event-location {
+            color: #5a6b4d;
+            font-size: 1em;
+            margin-bottom: 16px;
+        }
+        
+        .event-description {
+            color: #3d4531;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        .placeholder-note {
+            color: #7a8266;
+            font-style: italic;
+            font-size: 0.92em;
+        }
+        
+        .social-media-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 18px;
+            background: #2d7045;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+        
+        .social-media-link:hover {
+            background: #1a5632;
+            transform: scale(1.05);
+        }
+        
+        .social-media-placeholder {
+            color: #999;
+            font-style: italic;
+            font-size: 0.88em;
+            margin-top: 10px;
+        }
+        
+        /* About Section - Personal Touch */
+        .about-section {
+            background: #ead9b8;
+            border: 4px solid #e8d598;
+            border-radius: 18px;
+            padding: 30px 35px;
+            margin: 40px 0;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            position: relative;
+            font-family: 'Georgia', serif;
+        }
+        
+        .about-section::before {
+            content: "✨";
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            font-size: 1.8em;
+        }
+        
+        .about-section h2 {
+            color: #c73642;
+            font-size: 1.75em;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+        }
+        
+        .about-section p {
+            font-size: 1em;
+            line-height: 1.7;
+            color: #3d4531;
+        }
+        
+        .about-attribution {
+            font-style: italic;
+            color: #2d7045;
+            font-size: 1.05em;
+        }
+        
+        /* Footer/Contact Section - Friendly Warmth */
+        footer {
+            background: #1a5632;
+            color: #fffef8;
+            padding: 35px 30px;
+            text-align: center;
+            border-radius: 18px;
+            margin-top: 45px;
+            border: 4px solid #2d7045;
+            box-shadow: 0 6px 24px rgba(26, 86, 50, 0.2);
+        }
+        
+        footer h3 {
+            font-size: 1.35em;
+            margin-bottom: 18px;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+        }
+        
+        footer a {
+            color: #ffd966;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        
+        footer a:hover {
+            color: #ffe699;
+            text-decoration: underline;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            header {
+                padding: 30px 25px 20px 25px;
+            }
+            
+            header::before,
+            header::after {
+                font-size: 1.5em;
+                top: 10px;
+            }
+            
+            h1 {
+                font-size: 1.75em;
+            }
+            
+            .subtitle {
+                font-size: 1.1em;
+            }
+            
+            .tagline {
+                font-size: 1em;
+            }
+            
+            .section-header {
+                font-size: 1.4em;
+                padding: 15px 25px;
+            }
+            
+            .accordion-header {
+                font-size: 1em;
+                padding: 15px 20px;
+            }
+            
+            .accordion-inner {
+                padding: 18px 20px;
+            }
+            
+            .event-card {
+                padding: 22px 20px;
+            }
+            
+            .event-title {
+                font-size: 1.3em;
+            }
+            
+            .event-date-time {
+                font-size: 1.05em;
+            }
+            
+            .about-section {
+                padding: 28px 25px;
+            }
+            
+            /* Mobile: Stack flyer below content for both layouts */
+            .riverside-event {
+                flex-direction: column;
+            }
+            
+            .event-flyer {
+                width: 100%;
+            }
+            
+            .event-flyer img {
+                max-width: 100%;
+            }
+            
+            /* Mobile: Stack table cells */
+            .event-table,
+            .event-table tbody,
+            .event-table tr,
+            .event-table td {
+                display: block;
+                width: 100%;
+            }
+            
+            .text-column {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .flyer-column {
+                text-align: center;
+            }
+            
+            .flyer-column img {
+                max-width: 100%;
+                max-height: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Back to 2026 banner -->
+        <a class="archive-banner" href="index.html">&larr; This is the 2025 archive &mdash; see the 2026 Carol Sing-Alongs page</a>
+
+        <!-- Header -->
+        <header>
+            <h1>Carol Sing-Alongs Windsor 2025</h1>
+            <p class="subtitle">Participatory sing-along events to belt out Christmas carols together</p>
+            <div class="tagline">
+                <div class="tagline-quote">"The best way to spread Christmas cheer is singing loud for all to hear."</div>
+                <div class="tagline-attribution">~ Buddy Hobbs (Elf the movie)</div>
+            </div>
+        </header>
+
+        <!-- FAQ Section: Q1 + Q2 -->
+        <div class="faq-container">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>What is a carol sing-along?</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        Most of them follow a simple, welcoming format - you gather, sing carols together for 45 minutes to an hour, then coffee and cookies and conversation. Some events have a special twist - like the Lessons and Carols service where singing carols together is woven in between Bible readings telling the Christmas story.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>What do you get out of a sing-along?</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        You'll experience three big things. First - they're FUN! There's something joyful about being in a room full of people belting out 'Jingle Bells' and 'Deck the Halls' together. Then there's the warm hospitality of the host communities and being IN the music rather than just watching a performance.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events -->
+
+        <!-- Event 1: Chili & Song @ Riverside United Church -->
+        <div class="event-card riverside-event">
+            <div class="event-content">
+                <div class="event-title">Chili & Song @ Riverside United Church</div>
+                <div class="event-date-time">📅 Sun, Dec 7, 2025 • 5:30 PM - 7:30 PM</div>
+                <div class="event-location">📍 881 Glidden Ave, Windsor</div>
+                <a href="https://www.facebook.com/share/p/1WCZzBvBKo/" class="social-media-link">Event details on Facebook</a>
+            </div>
+            <div class="event-flyer">
+                <a href="images/2025/riverside-flyer.jpg" target="_blank">
+                    <img src="images/2025/riverside-flyer.jpg" alt="Chili & Song event flyer">
+                </a>
+            </div>
+        </div>
+
+        <!-- Radio Interview Embed -->
+        <div class="radio-embed-section">
+            <div class="radio-embed-label">🎙️ Listen: AM800 Interview</div>
+            <div class="radio-embed-container">
+                <iframe allow="autoplay" width="100%" height="300" src="https://www.iheart.com/podcast/962-mornings-with-mike-and-meg-76578045/episode/christmas-carol-sing-alongs-311842367/?embed=true" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <!-- Event 2: Carol Sing @ the Grace Cafe, Salvation Army -->
+        <div class="event-card">
+            <div class="event-title-outside">Carol Sing @ the Grace Cafe, Salvation Army - South Windsor Citadel</div>
+            <table class="event-table">
+                <tr>
+                    <td class="text-column">
+                        <div class="event-date-time">📅 Fri, Dec 12, 2025 • 10:00 AM</div>
+                        <div class="event-location">📍 1201 Grand Marais Road West, Windsor, ON</div>
+                    </td>
+                    <td class="flyer-column">
+                        <a href="images/2025/Graceful_Gatherings_Carol_Sing.jpg" target="_blank">
+                            <img src="images/2025/Graceful_Gatherings_Carol_Sing.jpg" alt="Grace Cafe Carol Sing event flyer">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Participation Note -->
+        <div class="participation-note">
+            <em>Carol sing-alongs are participatory events—not concerts. At least 50% of the program is dedicated to everyone singing together vs. watching performers.</em>
+        </div>
+
+        <!-- FAQ Section: Q5 (First Instance - Before Emmanuel) -->
+        <div class="faq-container">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Lessons & Carols Service: What is it?</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        Lessons and Carols originated in Cornwall, England in 1880 and became world-famous through King's College Cambridge.
+                        <ul>
+                            <li>• 9 Bible readings that tell the Christmas story</li>
+                            <li>• In between the readings: a mix of choirs performing & everyone singing carols together</li>
+                            <li>• @ Lessons & Carols you're part of the Christmas story, not just watching it unfold</li>
+                            <li>• This event was renewed after the collective trauma of World War I to help people reconnect & rebuild community</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 3: Christmas Lessons & Carols @ Emmanuel United Church -->
+        <div class="event-card riverside-event">
+            <div class="event-content">
+                <div class="event-title">Christmas Lessons & Carols @ Emmanuel United Church</div>
+                <div class="event-date-time">📅 Sun, Dec 14, 2025 • 7:00 PM</div>
+                <div class="event-location">📍 1728 Lincoln Rd, Windsor, ON (near Tecumseh Rd and Mohawk)</div>
+                <p class="event-description">Emmanuel United Church Choir presents a celebration of Christmas lessons and carols featuring a 60-voice choir (Emmanuel United Church Choir and Friends + Windsor Essex Youth Choir) and 5-piece ensemble. Music Director Nicholas Morvay leads an evening of music to fill you with the Christmas spirit, including some sing-along carols. Suggested donation $15 per person at the door.</p>
+                <a href="https://www.facebook.com/share/1APjjFxM5W/" class="social-media-link">Event details on Facebook</a>
+            </div>
+            <div class="event-flyer">
+                <a href="images/2025/Emmanuel_United_Sing-Along_Dec_14.jpg" target="_blank">
+                    <img src="images/2025/Emmanuel_United_Sing-Along_Dec_14.jpg" alt="Christmas Lessons and Carols event flyer">
+                </a>
+            </div>
+        </div>
+
+        <!-- Event 4: Candlelight Christmas @ Vineyard Christian Fellowship -->
+        <div class="event-card">
+            <div class="event-title">Candlelight Christmas @ Vineyard Christian Fellowship</div>
+            <div class="event-date-time">📅 Wed, Dec 17, 2025 • 7:00 PM</div>
+            <div class="event-location">📍 1650 Howard Ave., Windsor, ON</div>
+            <p class="event-description">An evening of readings and Christmas Carols. Everyone welcome,</p>
+            <a href="https://www.vineyardwindsor.com/upcoming-events" class="social-media-link">Event details on website</a>
+        </div>
+
+        <!-- Jovie/Buddy Dialogue -->
+        <div class="buddy-quote-divider">
+            Jovie: Thanks, but I don't sing<br>
+            Buddy: Oh, it's easy, it's just like talking—except louder and longer and you move your voice up and down. <span class="tagline-attribution">~ (Elf the movie)</span>
+        </div>
+
+        <!-- Event 5: An Evening of Christmas Carols @ St. Matthew's Anglican -->
+        <div class="event-card riverside-event">
+            <div class="event-content">
+                <div class="event-title">An Evening of Christmas Carols @ St. Matthew's Anglican</div>
+                <div class="event-date-time">📅 Fri, Dec 19, 2025 • 6:30 PM - 8:30 PM</div>
+                <div class="event-location">📍 1600 Norfolk St. (at Glenwood), Windsor, ON</div>
+                <p class="event-description">An evening of Christmas Carols - Come and SING with us and your hosts. <strong>FREE for everyone</strong>.</p>
+                <a href="https://www.facebook.com/share/15zwHhfuo5/" class="social-media-link">Event details on Facebook</a>
+            </div>
+            <div class="event-flyer">
+                <a href="images/2025/St_Matthews_Carol_Sing_Along.jpg" target="_blank">
+                    <img src="images/2025/St_Matthews_Carol_Sing_Along.jpg" alt="An Evening of Christmas Carols event flyer">
+                </a>
+            </div>
+        </div>
+
+        <!-- Event 6: Grace Bible Church -->
+        <div class="event-card riverside-event">
+            <div class="event-content">
+                <div class="event-title">A Saviour Has Come @ Grace Bible Church</div>
+                <div class="event-date-time">📅 Sat, Dec 20, 2025 • 6:30 PM - 8:30 PM</div>
+                <div class="event-location">📍 Holiday Inn - <strong>Kingsville Room</strong>, 1855 Huron Church Rd</div>
+                <p class="event-description">Join us for worship, fellowship, and refreshments in the <strong>Kingsville Room</strong></p>
+                <a href="https://www.facebook.com/share/p/1HyG9mGc4b/" class="social-media-link">Event details on Facebook</a>
+            </div>
+            <div class="event-flyer">
+                <a href="images/2025/Grace_Bible_Church__Carol_Sing-Along_Dec_20.jpg" target="_blank">
+                    <img src="images/2025/Grace_Bible_Church__Carol_Sing-Along_Dec_20.jpg" alt="A Saviour Has Come event flyer">
+                </a>
+            </div>
+        </div>
+
+        <!-- FAQ Section: Q5 (Second Instance - Before Church of Ascension) -->
+        <div class="faq-container">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Lessons & Carols Service: What is it?</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        Lessons and Carols originated in Cornwall, England in 1880 and became world-famous through King's College Cambridge.
+                        <ul>
+                            <li>• 9 Bible readings that tell the Christmas story</li>
+                            <li>• In between the readings: a mix of choirs performing & everyone singing carols together</li>
+                            <li>• @ Lessons & Carols you're part of the Christmas story, not just watching it unfold</li>
+                            <li>• This event was renewed after the collective trauma of World War I to help people reconnect & rebuild community</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 7: Nine Lessons and Carols @ Church of the Ascension -->
+        <div class="event-card riverside-event">
+            <div class="event-content">
+                <div class="event-title">Nine Lessons and Carols @ Church of the Ascension</div>
+                <div class="event-date-time">📅 Sun, Dec 21, 2025 • 1:00 PM</div>
+                <div class="event-location">📍 1385 University Ave. West, Windsor</div>
+                <p class="event-description">A Traditional Service of Nine Lessons and Carols. Hear the foretelling of the Birth of Christ through Scripture and Song. Freewill offering.</p>
+            </div>
+            <div class="event-flyer">
+                <a href="images/2025/Church_of_the_Ascension_Lessons_Carols.jpg" target="_blank">
+                    <img src="images/2025/Church_of_the_Ascension_Lessons_Carols.jpg" alt="Nine Lessons and Carols event flyer">
+                </a>
+            </div>
+        </div>
+
+        <!-- Event 8: Community Carol Sing @ Glenwood United -->
+        <div class="event-card">
+            <div class="event-title-outside">Community Carol Sing @ Glenwood United</div>
+            <table class="event-table">
+                <tr>
+                    <td class="text-column">
+                        <div class="event-date-time">📅 Sun, Dec 21, 2025 • 4:00 PM - 5:00 PM</div>
+                        <div class="event-location">📍 1825 Grand Marais Road West, Windsor, ON</div>
+                        <p class="event-description">All ages are welcome to join us in singing our favourite Christmas carols</p>
+                    </td>
+                    <td class="flyer-column">
+                        <a href="images/2025/Glenwood_United_Flyer.jpg" target="_blank">
+                            <img src="images/2025/Glenwood_United_Flyer.jpg" alt="Community Carol Sing event flyer">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- Event 9: Celebrate the Christmas Spirit @ Café Amor & Art -->
+        <div class="event-card riverside-event">
+            <div class="event-content">
+                <div class="event-title">Celebrate the Christmas Spirit @ Café Amor & Art</div>
+                <div class="event-date-time">📅 Wed, Dec 24, 2025 • 11:00 AM - 1:00 PM</div>
+                <div class="event-location">📍 1464 Ottawa St, Windsor, ON</div>
+                <p class="event-description">Enjoy it with our winter drinks, delicious food and pastries</p>
+                <a href="https://www.facebook.com/photo?fbid=1462548215873783&set=a.506726401455974" class="social-media-link">Event details on Facebook</a>
+            </div>
+            <div class="event-flyer">
+                <a href="images/2025/Cafe_Amore_Sing-Along_Dec_24.jpg" target="_blank">
+                    <img src="images/2025/Cafe_Amore_Sing-Along_Dec_24.jpg" alt="Celebrate the Christmas Spirit event flyer">
+                </a>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about-section">
+            <h2>About This Guide</h2>
+            <p>After years of carol sing-along filled Decembers in Edmonton, I wondered if similar experiences were available in Windsor too. This guide is proof the answer is YES! I'm looking forward to singing along and co-creating some Christmas cheer with you. <span class="about-attribution">~ Steve Grubich</span></p>
+        </div>
+
+        <!-- Footer/Contact -->
+        <footer>
+            <h3>Comments • Questions • Want your Carol Sing-Along listed here?</h3>
+            <p>Email: <a href="mailto:carolsingalong@gmail.com">carolsingalong@gmail.com</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Accordion: event delegation, works for mouse, touch and keyboard.
+        (function () {
+            function setOpen(item, open) {
+                var header = item.querySelector('.accordion-header');
+                var content = item.querySelector('.accordion-content');
+                item.classList.toggle('active', open);
+                header.setAttribute('aria-expanded', open ? 'true' : 'false');
+                content.style.maxHeight = open ? content.scrollHeight + 'px' : '0px';
+            }
+            function toggle(header) {
+                var item = header.closest('.accordion-item');
+                if (item) setOpen(item, !item.classList.contains('active'));
+            }
+            document.querySelectorAll('.accordion-header').forEach(function (h) {
+                h.setAttribute('role', 'button');
+                h.setAttribute('tabindex', '0');
+                h.setAttribute('aria-expanded', 'false');
+            });
+            document.addEventListener('click', function (e) {
+                var h = e.target.closest('.accordion-header');
+                if (h) toggle(h);
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key !== 'Enter' && e.key !== ' ') return;
+                var h = e.target.closest && e.target.closest('.accordion-header');
+                if (h) { e.preventDefault(); toggle(h); }
+            });
+            // Keep open panels correctly sized on rotate/resize.
+            window.addEventListener('resize', function () {
+                document.querySelectorAll('.accordion-item.active').forEach(function (item) {
+                    var c = item.querySelector('.accordion-content');
+                    c.style.maxHeight = c.scrollHeight + 'px';
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
