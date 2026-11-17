@@ -172,6 +172,11 @@
             margin-top: -3px;
         }
         
+        /* Hide the panel's borders while closed (a 0-height box still draws them) */
+        .accordion-item:not(.active) .accordion-content {
+            border-width: 0;
+        }
+
         .accordion-header {
             touch-action: manipulation;
             -webkit-tap-highlight-color: transparent;
