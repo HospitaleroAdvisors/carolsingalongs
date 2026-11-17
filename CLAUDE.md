@@ -37,7 +37,7 @@ Conventions:
 - The accordion script at the bottom of each page (event delegation, sizes panels with `scrollHeight`) and the CSS that hides closed panel borders. Don't go back to inline `onclick`.
 
 ## When the first 2026 event is added
-Replace the welcome box text ("2026 listings are on the way") with a short "more events are being added as hosts confirm" line, and keep the "Browse the 2025 Directory" button and organizer email. Ask Steve before changing the wording.
+Replace the welcome box text ("2026 listings are on the way") with a short "more events are being added as hosts confirm" line, and keep the "Browse the 2025 Directory" button and organizer email. Make this change in the same PR as the first event card, and mention it in the PR description. No need to ask first.
 
 ## Rolling over to a new year (each autumn)
 1. Copy the finished `index.html` to `<year>.html` and add the "return to current year" banner (copy it from `2025.html`). Update its title and og:url.
