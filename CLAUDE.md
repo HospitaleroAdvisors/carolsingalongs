@@ -7,7 +7,6 @@ Static directory of carol sing-along events in Windsor, Ontario. Hosted on GitHu
 - `2025.html` is the **archive** of last year. Has a banner at the top linking back to `index.html`. Treat as frozen; only fix real errors.
 - `images/<year>/` holds flyers (`images/2025/`, `images/2026/`). Reference them with relative paths, e.g. `images/2026/Name.jpg`. Never embed base64 images.
 - `og-image.jpg` (social preview) stays in the root.
-- `carol-singalong-windsor-2025.html` is an obsolete early draft. Do not edit or link to it.
 - Every page's CSS is inline in its own `<head>`. There is no shared stylesheet, so a style change must be made in each page that needs it.
 
 ## How we work (important)
