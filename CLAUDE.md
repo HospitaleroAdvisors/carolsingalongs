@@ -34,6 +34,7 @@ Conventions:
 - Mention audience singing in the description only when Steve confirms it.
 
 ## Keep as-is
+- The footer "Looking for last year? Browse the 2025 Directory" link: it is the permanent home of the archive link, so the welcome box can move or be removed later without losing it.
 - The design (colors, fonts, rounded cards), the Buddy Hobbs header quote, the FAQ dropdowns, the "About This Guide" box, and the footer with carolsingalong@gmail.com.
 - The "Lessons & Carols Service: What is it?" dropdown was removed from 2026 for now. Add it back (copy from `2025.html`) directly above the first Lessons & Carols event when one is listed.
 - The accordion script at the bottom of each page (event delegation, sizes panels with `scrollHeight`) and the CSS that hides closed panel borders. Don't go back to inline `onclick`.
@@ -44,7 +45,7 @@ Done: the welcome box now has no heading and reads "More December 2026 carol sin
 ## Rolling over to a new year (each autumn)
 1. Copy the finished `index.html` to `<year>.html` and add the "return to current year" banner (copy it from `2025.html`). Update its title and og:url.
 2. Move that year's flyers to `images/<year>/` and fix the `<img>` paths.
-3. Reset `index.html` to the new year: new title/h1/meta, remove event cards, restore the welcome box, point its archive button at the previous year's page, and add an empty `images/<newyear>/.gitkeep`.
+3. Reset `index.html` to the new year: new title/h1/meta, remove event cards, restore the welcome box, point its archive button **and the footer "Looking for last year?" link** at the previous year's page, and add an empty `images/<newyear>/.gitkeep`.
 
 ## Contact
 Event organizers submit to carolsingalong@gmail.com.
