@@ -347,6 +347,22 @@
             transform: scale(1.02);
         }
         
+        .flyer-pending {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            max-width: 100%;
+            aspect-ratio: 1427 / 1102;
+            margin-left: auto;
+            border: 3px dashed #2d7045;
+            border-radius: 10px;
+            background: #f3f7f1;
+            color: #5a6b4d;
+            font-size: 1.3em;
+            font-style: italic;
+        }
+
         .event-title {
             color: #c73642;
             font-size: 1.55em;
@@ -611,6 +627,10 @@
                 max-width: 100%;
                 max-height: none;
             }
+
+            .flyer-pending {
+                margin: 0 auto;
+            }
         }
     </style>
 </head>
@@ -627,15 +647,6 @@
             </div>
         </header>
 
-        <!-- 2026 Welcome -->
-        <div class="welcome-card">
-            <h2>🔔 Welcome! 2026 listings are on the way</h2>
-            <p>December 2026 carol sing-alongs are being added as local churches and community groups confirm their dates. Check back soon, and in the meantime, see what Windsor sang along to last year.</p>
-            <a href="2025.html" class="directory-button">Browse the 2025 Directory &rarr;</a>
-            <p class="organizer-note">Organizing a sing-along this December? Send your event details and flyer to <a href="mailto:carolsingalong@gmail.com">carolsingalong@gmail.com</a> and we'll get you listed.</p>
-        </div>
-
-        <!-- FAQ Section: Q1 + Q2 -->
         <div class="faq-container">
             <div class="accordion-item">
                 <div class="accordion-header">
@@ -648,7 +659,35 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <!-- Event 1: Festival of Carols @ Salvation Army South Windsor Citadel -->
+        <div class="event-card">
+            <div class="event-title-outside">Festival of Carols @ The Salvation Army - South Windsor Citadel</div>
+            <table class="event-table">
+                <tr>
+                    <td class="text-column">
+                        <div class="event-date-time">📅 Sun, Nov 29, 2026 • 3:00 PM</div>
+                        <div class="event-location">📍 1201 Grand Marais Rd W, Windsor, ON</div>
+                        <p class="event-description">South Windsor Citadel Band and Songsters with special guest voices from the Windsor Classic Chorale. Come ready to sing along! Free admission; donations welcome for the Christmas Kettle Campaign. Hot cocoa and cookies to follow.</p>
+                    </td>
+                    <td class="flyer-column">
+                        <a href="images/2026/Festival_of_Carols_Salvation_Army_Nov_29.jpg" target="_blank">
+                            <img src="images/2026/Festival_of_Carols_Salvation_Army_Nov_29.jpg" alt="Festival of Carols with The Salvation Army event flyer">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Welcome -->
+        <div class="welcome-card">
+            <p>More December 2026 carol sing-alongs are being added as local churches and community groups confirm their dates. Check back soon, and in the meantime, see what Windsor sang along to last year.</p>
+            <a href="2025.html" class="directory-button">Browse the 2025 Directory &rarr;</a>
+            <p class="organizer-note">Organizing a sing-along this December? Send your event details and flyer to <a href="mailto:carolsingalong@gmail.com">carolsingalong@gmail.com</a> and we'll get you listed.</p>
+        </div>
+
+        <div class="faq-container">
             <div class="accordion-item">
                 <div class="accordion-header">
                     <span>What do you get out of a sing-along?</span>
@@ -662,36 +701,20 @@
             </div>
         </div>
 
-        <!-- Lessons & Carols FAQ -->
-        <div class="faq-container">
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <span>Lessons & Carols Service: What is it?</span>
-                    <span class="accordion-icon">+</span>
-                </div>
-                <div class="accordion-content">
-                    <div class="accordion-inner">
-                        Lessons and Carols originated in Cornwall, England in 1880 and became world-famous through King's College Cambridge.
-                        <ul>
-                            <li>• 9 Bible readings that tell the Christmas story</li>
-                            <li>• In between the readings: a mix of choirs performing & everyone singing carols together</li>
-                            <li>• @ Lessons & Carols you're part of the Christmas story, not just watching it unfold</li>
-                            <li>• This event was renewed after the collective trauma of World War I to help people reconnect & rebuild community</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Participation Note -->
-        <div class="participation-note">
-            <em>Carol sing-alongs are participatory events—not concerts. At least 50% of the program is dedicated to everyone singing together vs. watching performers.</em>
-        </div>
-
-        <!-- Jovie/Buddy Dialogue -->
-        <div class="buddy-quote-divider">
-            Jovie: Thanks, but I don't sing<br>
-            Buddy: Oh, it's easy, it's just like talking—except louder and longer and you move your voice up and down. <span class="tagline-attribution">~ (Elf the movie)</span>
+        <!-- Event 2: Carol Sing @ the Grace Cafe (flyer pending) -->
+        <div class="event-card">
+            <div class="event-title-outside">Carol Sing @ the Grace Cafe, Salvation Army - South Windsor Citadel</div>
+            <table class="event-table">
+                <tr>
+                    <td class="text-column">
+                        <div class="event-date-time">📅 Thu, Dec 17, 2026 • 1:00 PM</div>
+                        <div class="event-location">📍 1201 Grand Marais Rd W, Windsor, ON</div>
+                    </td>
+                    <td class="flyer-column">
+                        <div class="flyer-pending">Flyer Pending</div>
+                    </td>
+                </tr>
+            </table>
         </div>
 
         <!-- About Section -->
