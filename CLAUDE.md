@@ -36,7 +36,7 @@ Conventions:
 ## Keep as-is
 - The footer "Looking for last year? Browse the 2025 Directory" link: it is the permanent home of the archive link, so the welcome box can move or be removed later without losing it.
 - The design (colors, fonts, rounded cards), the Buddy Hobbs header quote, the FAQ dropdowns, the "About This Guide" box, and the footer with carolsingalong@gmail.com.
-- The "Lessons & Carols Service: What is it?" dropdown was removed from 2026 for now. Add it back (copy from `2025.html`) directly above the first Lessons & Carols event when one is listed.
+- The "Lessons & Carols Service: What is it?" dropdown sits directly above the Emmanuel United Lessons & Carols card. If an earlier Lessons & Carols event is ever added, move the dropdown above that one instead (one copy is enough).
 - The accordion script at the bottom of each page (event delegation, sizes panels with `scrollHeight`) and the CSS that hides closed panel borders. Don't go back to inline `onclick`.
 
 ## When the first 2026 event is added
